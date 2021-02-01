@@ -32,6 +32,7 @@ npm start
 ```
 
 7. dashboard地址：https://${parse_host}:${dashboard_port}/dashboard (eg.https://api.yourApp.com:4040/dashboard/)；
+8. dashboard访问用户名和密码的初始配置为user/user_pass，可在app.json的dashboardUsers配置项中修改；
 
 ### TODO
 1. 除afterSave外，其他trigger函数均未实现；

@@ -3,7 +3,6 @@
 /node_modules
 yarn.lock
 package-lock.json
-cloud/algorithm/__pycache__
 
 # Logs
 logs
