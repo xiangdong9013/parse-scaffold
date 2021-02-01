@@ -1,0 +1,24 @@
+{
+  "name": "parse-scaffold",
+  "description": "parse 示例脚手架，集成parse-server、parse-dashboard、parse-swagger",
+  "repository": "https://github.com/xiangdong9013/parse-scaffold",
+  "env": {
+    "PARSE_MOUNT": {
+      "description": "Configure Parse API route.",
+      "value": "/parse"
+    },
+    "APP_ID": {
+      "description": "A unique identifier for your app.",
+      "value": ""
+    },
+    "MASTER_KEY": {
+      "description": "A key that overrides all permissions. Keep this secret.",
+      "value": ""
+    },
+    "DATABASE_URI": {
+      "description": "Connection string for your database.",
+      "value": "$SCALINGO_MONGO_URL"
+    }
+  },
+  "addons": ["scalingo-mongodb"]
+}

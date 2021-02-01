@@ -1,0 +1,30 @@
+{
+  "name": "parse-scaffold",
+  "version": "1.0.0",
+  "description": "parse 示例脚手架，集成parse-server、parse-dashboard、parse-swagger",
+  "repository": "https://github.com/xiangdong9013/parse-scaffold",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "crypto-js": "^4.0.0",
+    "express": "~4.17.1",
+    "fs": "0.0.1-security",
+    "parse-dashboard": "^2.0.5",
+    "parse-server": "^4.2.0",
+    "path": "^0.12.7",
+    "saslprep": "^1.0.3"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "7.9.0",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "7.8.3"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=4.3"
+  },
+  "resolutions": {
+    "graphql": "14.5.8"
+  }
+}

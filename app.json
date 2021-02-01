@@ -1,0 +1,49 @@
+{
+  "name": "parse-scaffold",
+  "description": "利用parse-dashboard和parse-server搭建的parse后台脚手架",
+  "repository": "https://github.com/xiangdong9013/parse-scaffold",
+  "parse_host": {
+    "description": "parse-server服务所在的地址（域名表示）",
+    "value": "testapi.yourCompany.com"
+  },
+  "parse_port": 1337,
+  "dashboard_port": 4040,
+  "applications": [{
+      "appId": {
+        "description": "必填，app唯一标识",
+        "value": "yourApp"
+      },
+      "appName": {
+        "description": "必填，app描述",
+        "value": "yourAppName"
+      },
+      "masterKey": {
+        "description": "必填，超级权限key，不可泄露",
+        "value": "yourAppMasterKey"
+      },
+      "graphQLServerURL": {
+        "description": "选填，graphQL配置，类似'/graphql_app'",
+        "value": "/graphql_app"
+      },
+      "dbConfig": {
+        "description": "以下所有除liveQuery外、都必填，该应用所对应的MongoDB数据库名称、用户名、密码",
+        "dbName":"db_name",
+        "user":"db_user",
+        "pass":"db_pass",
+        "liveQuery": {
+          "classNames": [
+            "Posts", "Comments"
+          ]
+        }
+      },
+      "cloud": {
+        "description": "cloud code所在路径（相对本项目根目录的路径，路径前不要加'/'）",
+        "value": "cloud/yourApp/main.js"
+      }
+    }
+  ],
+  "dashboardUsers": [{
+    "user": "user",
+    "pass": "user_pass"
+  }]
+}
