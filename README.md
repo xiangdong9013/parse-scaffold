@@ -3,8 +3,9 @@
 parse 示例脚手架，集成parse-server、parse-dashboard、parse-swagger
 
 ### Installation
+clone本项目后：
 ```
-npm i parse-scaffold
+cd parse-scaffold
 npm install
 npm start
 ```
